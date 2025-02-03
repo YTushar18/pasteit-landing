@@ -51,8 +51,11 @@ export default function PasteItLanding() {
               Coming Soon to Chrome Store 🚀
             </Badge>
             <h1 className="text-6xl lg:text-7xl font-bold mb-8 text-white">
-              PasteIt - Your Ultimate Copy-Paste Manager
+              PasteIt
             </h1>
+            <h2 className="text-6xl lg:text-4xl font-bold mb-8 text-white">
+              Your Ultimate Copy-Paste Manager
+            </h2>
             <p className="text-xl lg:text-2xl mb-8 text-white/90">
               Store multiple copied text snippets, autofill forms, and reorder
               your clipboard with drag & drop. Perfect for job applications,
@@ -315,7 +318,12 @@ export default function PasteItLanding() {
             </div>
             <div>
               <h3 className="font-bold mb-4">Contact</h3>
-              <p className="text-gray-400">tushar18yadav@outlook.com</p>
+              <a
+                    href="https://tusharyadav.netlify.app/#contact-section"
+                    className="hover:text-white"
+                  >
+                   <p className="text-gray-400 mt-4">Connect with me...</p>
+                  </a>
             </div>
             <div>
               <h3 className="font-bold mb-4">Links</h3>
@@ -349,7 +357,15 @@ export default function PasteItLanding() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <a
+                    href="https://tusharyadav.netlify.app/" //https://tusharyadav.netlify.app/#contact-section
+                    className="hover:text-white"
+                  >
+                    Portfolio
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/YTushar18/pasteIt" className="hover:text-white">
                     GitHub
                   </a>
                 </li>
@@ -357,7 +373,7 @@ export default function PasteItLanding() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 PasteIt. All rights reserved.</p>
+            <p>&copy; 2025 PasteIt. All rights reserved.</p>
           </div>
         </div>
       </footer>
