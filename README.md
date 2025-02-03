@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PasteIt - Your Ultimate Copy-Paste Manager
 
-## Getting Started
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
-First, run the development server:
+PasteIt is a powerful browser extension that revolutionizes your copy-paste experience. Perfect for job applications, form filling, and any task requiring frequent text input, PasteIt streamlines your workflow and boosts productivity.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![PasteIt Demo](https://path-to-your-demo-gif-or-image.gif)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 📋 **Multi-Text Clipboard**: Store multiple copied snippets for easy access.
+- 🔄 **Drag & Drop Reordering**: Prioritize important snippets by dragging them to your preferred order.
+- ⚡ **Smart Autofill**: Intelligently recognizes form fields for name, email, phone, and more.
+- 🔒 **Persistent Storage**: Your clipboard stays intact even after browser restart.
+- 🌟 **Enhanced UI**: Clean, modern design with a floating clipboard for easy access.
+- 🗑️ **Easy Management**: Delete individual items or clear all with one click.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/pasteit.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd pasteit
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Build the project:
+   ```
+   npm run build
+   ```
+5. Load the extension in your browser:
+   - Open Chrome and navigate to `chrome://extensions`
+   - Enable "Developer mode"
+   - Click "Load unpacked" and select the `dist` folder in the project directory
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After installation, PasteIt will appear as an icon in your browser's toolbar. Click the icon to open the PasteIt interface.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- To copy text: Simply select and copy text as you normally would.
+- To paste: Click on any input field, and the PasteIt interface will appear, allowing you to select from your stored snippets.
+- To manage snippets: Open the PasteIt interface and use the drag-and-drop feature to reorder, or the delete button to remove snippets.
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To set up the project for development:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Follow the installation steps above.
+2. Start the development server:
+   ```
+   npm run dev
+   ```
+3. Make your changes in the `src` directory.
+4. The project will automatically rebuild as you make changes.
+
+## Contributing
+
+We welcome contributions to PasteIt! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with a clear commit message.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
+
+Please ensure your code adheres to our coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any queries or support, please contact us at tushar18yadav@outlook.com.
+
+---
+
+Made with ❤️ by [Your Name/Team Name]
