@@ -25,7 +25,7 @@ export default function Support() {
               Support Center
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Need help with PasteIt? We're here to assist you. Check out our frequently asked questions below or reach
+              Need help with PasteIt? We`&apos;`re here to assist you. Check out our frequently asked questions below or reach
               out to our support team.
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function Support() {
                   <div>
                     <h2 className="text-xl font-semibold mb-2">Contact Support</h2>
                     <p className="text-gray-600 mb-4">
-                      Can't find what you're looking for? Our support team is here to help.
+                      Can`&apos;`t find what you`&apos;`re looking for? Our support team is here to help.
                     </p>
                     <Button asChild>
                       <a href="mailto:support@getpasteit.com">Email Support</a>
@@ -86,8 +86,8 @@ export default function Support() {
                 <AccordionItem value="item-1" className="border-orange-100">
                   <AccordionTrigger className="hover:text-orange-600">How do I install PasteIt?</AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Installing PasteIt is easy! Simply visit the Chrome Web Store, search for "PasteIt", and click the
-                    "Add to Chrome" button. The extension will automatically install and be ready to use.
+                    Installing PasteIt is easy! Simply visit the Chrome Web Store, search for `&quot;`PasteIt`&quot;`, and click the
+                    `&quot;`Add to Chrome`&quot;` button. The extension will automatically install and be ready to use.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -123,7 +123,7 @@ export default function Support() {
                     Can I sync my clipboard across devices?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Currently, PasteIt operates on a per-device basis. Cross-device synchronization is a feature we're
+                    Currently, PasteIt operates on a per-device basis. Cross-device synchronization is a feature we`&apos;`re
                     actively working on and will be available in a future update. Stay tuned for announcements!
                   </AccordionContent>
                 </AccordionItem>
