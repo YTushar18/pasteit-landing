@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { CTAButton } from "@/components/cta-button"
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -14,6 +15,7 @@ import { Carousel, CarouselItem } from "@/components/carousel";
 import type React from "react";
 import { Logo } from "@/components/logo";
 import { Navbar } from "@/components/navbar";
+
 
 export default function PasteItLanding() {
   const reviews = [
@@ -61,12 +63,9 @@ export default function PasteItLanding() {
               your clipboard with drag & drop. Perfect for job applications,
               forms, and more!
             </p>
-            <Button
-              size="lg"
-              className="bg-white text-orange-600 hover:bg-white/90"
-            >
+            <CTAButton size="lg" className="bg-white text-orange-600 hover:bg-white/90">
               Get PasteIt Free
-            </Button>
+            </CTAButton>
           </div>
         </div>
       </section>
@@ -275,7 +274,19 @@ export default function PasteItLanding() {
               <Step
                 number={3}
                 title="Add to Chrome"
-                description="Click 'Add to Chrome' button"
+                description={
+                  <span>
+                    Click 'Add to Chrome' button on the{" "}
+                    <a
+                      href="https://chrome.google.com/webstore/detail/foiaocdbmfnbjhcnjbcdjaddjbghmefc"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-orange-500 hover:underline"
+                    >
+                      Chrome Web Store
+                    </a>
+                  </span>
+                }
               />
               <Step
                 number={4}
@@ -297,12 +308,9 @@ export default function PasteItLanding() {
             Join thousands of users who have already improved their productivity
             with PasteIt.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-orange-600 hover:bg-white/90"
-          >
+          <CTAButton size="lg" className="bg-white text-orange-600 hover:bg-white/90">
             Install PasteIt Now
-          </Button>
+          </CTAButton>
         </div>
       </section>
 
@@ -403,15 +411,7 @@ function FeatureCard({
   );
 }
 
-function Step({
-  number,
-  title,
-  description,
-}: {
-  number: number;
-  title: string;
-  description: string;
-}) {
+function Step({ number, title, description }: { number: number; title: string; description: React.ReactNode }) {
   return (
     <div className="flex items-start gap-4">
       <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center flex-shrink-0">
@@ -419,10 +419,10 @@ function Step({
       </div>
       <div>
         <h3 className="font-bold text-lg">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <div className="text-gray-600">{description}</div>
       </div>
     </div>
-  );
+  )
 }
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
