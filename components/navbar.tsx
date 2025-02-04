@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Logo } from "./logo"
-import { Button } from "./ui/button"
 import { CTAButton } from "@/components/cta-button"
 
 export function Navbar() {

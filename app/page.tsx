@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { CTAButton } from "@/components/cta-button"
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +14,7 @@ import { Carousel, CarouselItem } from "@/components/carousel";
 import type React from "react";
 import { Logo } from "@/components/logo";
 import { Navbar } from "@/components/navbar";
+import Link from "next/link"
 
 
 export default function PasteItLanding() {
@@ -39,7 +39,7 @@ export default function PasteItLanding() {
       author: "Emily L.",
       rating: 5,
     },
-  ];
+  ]
 
   return (
     <div className="min-h-screen">
@@ -64,7 +64,7 @@ export default function PasteItLanding() {
               forms, and more!
             </p>
             <CTAButton size="lg" className="bg-white text-orange-600 hover:bg-white/90">
-              Get PasteIt Free
+              Get PasteIt Now
             </CTAButton>
           </div>
         </div>
@@ -276,7 +276,7 @@ export default function PasteItLanding() {
                 title="Add to Chrome"
                 description={
                   <span>
-                    Click 'Add to Chrome' button on the{" "}
+                    Click `&apos;`Add to Chrome`&apos;` button on the{" "}
                     <a
                       href="https://chrome.google.com/webstore/detail/foiaocdbmfnbjhcnjbcdjaddjbghmefc"
                       target="_blank"
@@ -337,19 +337,19 @@ export default function PasteItLanding() {
               <h3 className="font-bold mb-4">Links</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/privacy-policy" className="hover:text-white">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/terms-of-service" className="hover:text-white">
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white">
+                <Link href="/support" className="hover:text-white">
                     Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
