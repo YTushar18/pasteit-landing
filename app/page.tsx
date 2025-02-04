@@ -18,28 +18,28 @@ import Link from "next/link"
 
 
 export default function PasteItLanding() {
-  const reviews = [
-    {
-      text: "This extension has completely transformed how I fill out job applications!",
-      author: "John D.",
-      rating: 5,
-    },
-    {
-      text: "The drag and drop feature is a game changer. So intuitive!",
-      author: "Sarah M.",
-      rating: 5,
-    },
-    {
-      text: "Best clipboard manager I've ever used. Simple yet powerful.",
-      author: "Michael R.",
-      rating: 5,
-    },
-    {
-      text: "PasteIt has saved me hours of time on repetitive tasks!",
-      author: "Emily L.",
-      rating: 5,
-    },
-  ]
+  // const reviews = [
+  //   {
+  //     text: "This extension has completely transformed how I fill out job applications!",
+  //     author: "John D.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     text: "The drag and drop feature is a game changer. So intuitive!",
+  //     author: "Sarah M.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     text: "Best clipboard manager I've ever used. Simple yet powerful.",
+  //     author: "Michael R.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     text: "PasteIt has saved me hours of time on repetitive tasks!",
+  //     author: "Emily L.",
+  //     rating: 5,
+  //   },
+  // ]
 
   return (
     <div className="min-h-screen">
@@ -194,7 +194,7 @@ export default function PasteItLanding() {
       </section>
 
       {/* User Reviews Section */}
-      <section id="reviews" className="py-20 bg-gray-50">
+      {/* <section id="reviews" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
             What Our Users Say
@@ -224,7 +224,7 @@ export default function PasteItLanding() {
             </Carousel>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section id="faq" className="py-20">

@@ -38,6 +38,9 @@ export function Navbar() {
             <a href="#reviews" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
               Reviews
             </a>
+            <a href="/docs" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
+              Documentation
+            </a>
             <a href="#faq" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
               FAQ
             </a>
