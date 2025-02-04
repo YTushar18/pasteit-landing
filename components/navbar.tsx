@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Logo } from "./logo"
-import { Button } from "./ui/button"
+import { CTAButton } from "@/components/cta-button"
 
 export function Navbar() {
   const [isSticky, setIsSticky] = useState(false)
@@ -41,9 +41,12 @@ export function Navbar() {
             <a href="#faq" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
               FAQ
             </a>
-            <Button size="sm" className={isSticky ? "bg-orange-500 text-white" : "bg-white text-orange-600"}>
+            {/* <Button size="sm" className={isSticky ? "bg-orange-500 text-white" : "bg-white text-orange-600"}> */}
+              {/* Get PasteIt */}
+            {/* </Button> */}
+            <CTAButton size="sm" className={isSticky ? "bg-orange-500 text-white" : "bg-white text-orange-600"}>
               Get PasteIt
-            </Button>
+            </CTAButton>
           </div>
         </div>
       </div>

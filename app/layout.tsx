@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "PasteIt - Your Ultimate Copy-Paste Manager",
   description: "Store multiple copied text snippets, autofill forms, and reorder your clipboard with drag & drop.",
   icons: {
-    icon: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/icon512-olPerYhqJhjnS75Ldxk8TwGH3FhZm2.png",
+    icon: "images/Letter P Icon (1).png",
   },
 }
 
