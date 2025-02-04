@@ -18,28 +18,28 @@ import Link from "next/link"
 
 
 export default function PasteItLanding() {
-  const reviews = [
-    {
-      text: "This extension has completely transformed how I fill out job applications!",
-      author: "John D.",
-      rating: 5,
-    },
-    {
-      text: "The drag and drop feature is a game changer. So intuitive!",
-      author: "Sarah M.",
-      rating: 5,
-    },
-    {
-      text: "Best clipboard manager I've ever used. Simple yet powerful.",
-      author: "Michael R.",
-      rating: 5,
-    },
-    {
-      text: "PasteIt has saved me hours of time on repetitive tasks!",
-      author: "Emily L.",
-      rating: 5,
-    },
-  ]
+  // const reviews = [
+  //   {
+  //     text: "This extension has completely transformed how I fill out job applications!",
+  //     author: "John D.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     text: "The drag and drop feature is a game changer. So intuitive!",
+  //     author: "Sarah M.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     text: "Best clipboard manager I've ever used. Simple yet powerful.",
+  //     author: "Michael R.",
+  //     rating: 5,
+  //   },
+  //   {
+  //     text: "PasteIt has saved me hours of time on repetitive tasks!",
+  //     author: "Emily L.",
+  //     rating: 5,
+  //   },
+  // ]
 
   return (
     <div className="min-h-screen">
