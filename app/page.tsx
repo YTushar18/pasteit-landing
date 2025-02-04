@@ -194,7 +194,7 @@ export default function PasteItLanding() {
       </section>
 
       {/* User Reviews Section */}
-      <section id="reviews" className="py-20 bg-gray-50">
+      {/* <section id="reviews" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
             What Our Users Say
@@ -224,7 +224,7 @@ export default function PasteItLanding() {
             </Carousel>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section id="faq" className="py-20">
