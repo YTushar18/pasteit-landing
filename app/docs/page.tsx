@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Logo } from "@/components/logo"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -36,7 +35,7 @@ export default function Documentation() {
               PasteIt Documentation
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Welcome to the official documentation for PasteIt. Here you'll find everything you need to know about
+              Welcome to the official documentation for PasteIt. Here you`&apos;`ll find everything you need to know about
               installing, using, and getting the most out of PasteIt.
             </p>
           </div>
@@ -58,12 +57,12 @@ export default function Documentation() {
                   </h2>
                   <ol className="list-decimal list-inside space-y-4 text-gray-600">
                     <li>Open your Chrome browser and navigate to the Chrome Web Store.</li>
-                    <li>In the search bar, type "PasteIt" and press Enter.</li>
+                    <li>In the search bar, type `&quot;`PasteIt`&quot;` and press Enter.</li>
                     <li>Look for PasteIt in the search results and click on it.</li>
-                    <li>On the PasteIt extension page, click the "Add to Chrome" button.</li>
-                    <li>A pop-up will appear asking for permissions. Click "Add extension" to proceed.</li>
+                    <li>On the PasteIt extension page, click the `&quot;`Add to Chrome`&quot;` button.</li>
+                    <li>A pop-up will appear asking for permissions. Click `&quot;`Add extension`&quot;` to proceed.</li>
                     <li>
-                      PasteIt will now be installed and ready to use. You'll see the PasteIt icon in your browser
+                      PasteIt will now be installed and ready to use. You`&apos;`ll see the PasteIt icon in your browser
                       toolbar.
                     </li>
                   </ol>
@@ -197,21 +196,21 @@ export default function Documentation() {
                     <div>
                       <h3 className="font-semibold text-lg mb-2">PasteIt icon is not visible in the toolbar</h3>
                       <p className="text-gray-600">
-                        Try clicking the puzzle piece icon in your Chrome toolbar and pin PasteIt from there. If it's
+                        Try clicking the puzzle piece icon in your Chrome toolbar and pin PasteIt from there. If it`&apos;`s
                         still not visible, try reinstalling the extension.
                       </p>
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Clipboard items are not saving</h3>
                       <p className="text-gray-600">
-                        Ensure that PasteIt has the necessary permissions. You can check this in Chrome's extension
+                        Ensure that PasteIt has the necessary permissions. You can check this in Chrome`&apos;`s extension
                         settings. If the problem persists, try restarting your browser.
                       </p>
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-2">Autofill is not working</h3>
                       <p className="text-gray-600">
-                        Make sure you have enabled the autofill feature in PasteIt's settings. If it's enabled and still
+                        Make sure you have enabled the autofill feature in PasteIt`&apos;`s settings. If it`&apos;`s enabled and still
                         not working, try clearing your browser cache and restarting Chrome.
                       </p>
                     </div>
