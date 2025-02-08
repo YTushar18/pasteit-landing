@@ -1,21 +1,25 @@
 import Image from "next/image";
-import { CTAButton } from "@/components/cta-button"
+import { CTAButton } from "@/components/cta-button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Clipboard,
   Star,
   DropletsIcon as DragDropLines,
-  Trash2,
   Zap,
+  MousePointerClick,
+  ToggleLeft,
+  Menu,
+  XCircle,
   Lock,
+  Maximize,
+  Move,
 } from "lucide-react";
 import { Carousel, CarouselItem } from "@/components/carousel";
 import type React from "react";
 import { Logo } from "@/components/logo";
 import { Navbar } from "@/components/navbar";
-import Link from "next/link"
-
+import Link from "next/link";
 
 export default function PasteItLanding() {
   // const reviews = [
@@ -50,7 +54,7 @@ export default function PasteItLanding() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="bg-white/20 text-white mb-6 backdrop-blur-sm text-lg">
-              Coming Soon to Chrome Store 🚀
+              Now available on Chrome Store 🚀
             </Badge>
             <h1 className="text-6xl lg:text-7xl font-bold mb-8 text-white">
               PasteIt
@@ -63,7 +67,10 @@ export default function PasteItLanding() {
               your clipboard with drag & drop. Perfect for job applications,
               forms, and more!
             </p>
-            <CTAButton size="lg" className="bg-white text-orange-600 hover:bg-white/90">
+            <CTAButton
+              size="lg"
+              className="bg-white text-orange-600 hover:bg-white/90"
+            >
               Get PasteIt Now
             </CTAButton>
           </div>
@@ -88,6 +95,26 @@ export default function PasteItLanding() {
               description="Prioritize important snippets by dragging them to your preferred order."
             />
             <FeatureCard
+              icon={<MousePointerClick className="w-6 h-6" />}
+              title="Smart Right-Click Control"
+              description="Popup intelligently disappears on right-click, ensuring a smooth and natural interaction experience."
+            />
+            <FeatureCard
+              icon={<ToggleLeft className="w-6 h-6" />}
+              title="Customizable Popup Behavior"
+              description="Toggle clipboard popup visibility from the extension window, with settings that persist across sessions."
+            />
+            <FeatureCard
+              icon={<Menu className="w-6 h-6" />}
+              title="Context Menu Integration"
+              description="Access your clipboard history directly from the right-click menu for quick and convenient pasting."
+            />
+            <FeatureCard
+              icon={<XCircle className="w-6 h-6" />}
+              title="Quick Clear Function"
+              description="Clear your entire clipboard history instantly from the right-click menu."
+            />
+            <FeatureCard
               icon={<Zap className="w-6 h-6" />}
               title="Smart Autofill"
               description="Intelligently recognizes form fields for name, email, phone, and more."
@@ -95,7 +122,7 @@ export default function PasteItLanding() {
             <FeatureCard
               icon={<Lock className="w-6 h-6" />}
               title="Persistent Storage"
-              description="Your clipboard stays intact even after browser restart."
+              description="Your clipboard items remain intact even after browser restart."
             />
             <FeatureCard
               icon={<Star className="w-6 h-6" />}
@@ -103,9 +130,14 @@ export default function PasteItLanding() {
               description="Clean, modern design with a floating clipboard for easy access."
             />
             <FeatureCard
-              icon={<Trash2 className="w-6 h-6" />}
-              title="Easy Management"
-              description="Delete individual items or clear all with one click."
+              icon={<Move className="w-6 h-6" />}
+              title="Draggable Popup"
+              description="Move the clipboard popup anywhere on the screen and it stays in place between sessions."
+            />
+            <FeatureCard
+              icon={<Maximize className="w-6 h-6" />}
+              title="Resizable Popup"
+              description="Adjust the popup size to your preference, perfect for handling long text snippets."
             />
           </div>
         </div>
@@ -119,17 +151,6 @@ export default function PasteItLanding() {
           </h2>
           <div className="max-w-5xl mx-auto">
             <Carousel options={{ loop: true, slidesToScroll: 1 }}>
-              <CarouselItem>
-                <div className="p-4">
-                  <Image
-                    src="/images/img1.png"
-                    alt="PasteIt Promo"
-                    width={1200}
-                    height={675}
-                    className="rounded-3xl shadow-lg"
-                  />
-                </div>
-              </CarouselItem>
               <CarouselItem>
                 <div className="p-4">
                   <Image
@@ -177,8 +198,8 @@ export default function PasteItLanding() {
               <CarouselItem>
                 <div className="p-4 aspect-video">
                   <iframe
-                    width="560"
-                    height="315"
+                    width="1200"
+                    height="675"
                     src="https://www.youtube.com/embed/idaaTVNOVr4?si=XbvRTr5MH3TQ58Ee"
                     title="YouTube video player"
                     frameBorder="0"
@@ -308,7 +329,10 @@ export default function PasteItLanding() {
             Join thousands of users who have already improved their productivity
             with PasteIt.
           </p>
-          <CTAButton size="lg" className="bg-white text-orange-600 hover:bg-white/90">
+          <CTAButton
+            size="lg"
+            className="bg-white text-orange-600 hover:bg-white/90"
+          >
             Install PasteIt Now
           </CTAButton>
         </div>
@@ -327,11 +351,11 @@ export default function PasteItLanding() {
             <div>
               <h3 className="font-bold mb-4">Contact</h3>
               <a
-                    href="https://tusharyadav.netlify.app/#contact-section"
-                    className="hover:text-white"
-                  >
-                   <p className="text-gray-400 mt-4">Connect with me...</p>
-                  </a>
+                href="https://tusharyadav.netlify.app/#contact-section"
+                className="hover:text-white"
+              >
+                <p className="text-gray-400 mt-4">Connect with me...</p>
+              </a>
             </div>
             <div>
               <h3 className="font-bold mb-4">Links</h3>
@@ -347,7 +371,7 @@ export default function PasteItLanding() {
                   </Link>
                 </li>
                 <li>
-                <Link href="/support" className="hover:text-white">
+                  <Link href="/support" className="hover:text-white">
                     Support
                   </Link>
                 </li>
@@ -373,7 +397,10 @@ export default function PasteItLanding() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/YTushar18/pasteIt" className="hover:text-white">
+                  <a
+                    href="https://github.com/YTushar18/pasteIt"
+                    className="hover:text-white"
+                  >
                     GitHub
                   </a>
                 </li>
@@ -411,7 +438,15 @@ function FeatureCard({
   );
 }
 
-function Step({ number, title, description }: { number: number; title: string; description: React.ReactNode }) {
+function Step({
+  number,
+  title,
+  description,
+}: {
+  number: number;
+  title: string;
+  description: React.ReactNode;
+}) {
   return (
     <div className="flex items-start gap-4">
       <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center flex-shrink-0">
@@ -422,7 +457,7 @@ function Step({ number, title, description }: { number: number; title: string; d
         <div className="text-gray-600">{description}</div>
       </div>
     </div>
-  )
+  );
 }
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {

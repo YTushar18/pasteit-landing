@@ -35,9 +35,9 @@ export function Navbar() {
             <a href="#demo" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
               Demo
             </a>
-            <a href="#reviews" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
+            {/* <a href="#reviews" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
               Reviews
-            </a>
+            </a> */}
             <a href="/docs" className={`${isSticky ? "text-gray-600" : "text-white"} hover:text-orange-500`}>
               Documentation
             </a>
