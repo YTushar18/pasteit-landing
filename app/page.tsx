@@ -144,7 +144,7 @@ export default function PasteItLanding() {
       </section>
 
       {/* Demo Section */}
-      <section id="demo" className="py-20">
+      {/* <section id="demo" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
             See PasteIt in Action
@@ -156,8 +156,8 @@ export default function PasteItLanding() {
                   <Image
                     src="/images/img1.png"
                     alt="PasteIt Promo"
-                    width={1200}
-                    height={675}
+                    width={1920}
+                    height={1080}
                     className="rounded-3xl shadow-lg"
                   />
                 </div>
@@ -167,8 +167,8 @@ export default function PasteItLanding() {
                   <Image
                     src="/images/img2.png"
                     alt="PasteIt Promo"
-                    width={1200}
-                    height={675}
+                    width={1920}
+                    height={1080}
                     className="rounded-3xl shadow-lg"
                   />
                 </div>
@@ -178,8 +178,8 @@ export default function PasteItLanding() {
                   <Image
                     src="/images/img3.png"
                     alt="PasteIt Promo"
-                    width={1200}
-                    height={675}
+                    width={1920}
+                    height={1080}
                     className="rounded-3xl shadow-lg"
                   />
                 </div>
@@ -189,8 +189,30 @@ export default function PasteItLanding() {
                   <Image
                     src="/images/img4.png"
                     alt="PasteIt Promo"
-                    width={1200}
-                    height={675}
+                    width={1920}
+                    height={1080}
+                    className="rounded-3xl shadow-lg"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-4">
+                  <Image
+                    src="/images/img5.png"
+                    alt="PasteIt Promo"
+                    width={1920}
+                    height={1080}
+                    className="rounded-3xl shadow-lg"
+                  />
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="p-4">
+                  <Image
+                    src="/images/img6.png"
+                    alt="PasteIt Promo"
+                    width={1920}
+                    height={1080}
                     className="rounded-3xl shadow-lg"
                   />
                 </div>
@@ -198,9 +220,109 @@ export default function PasteItLanding() {
               <CarouselItem>
                 <div className="p-4 aspect-video">
                   <iframe
-                    width="1200"
-                    height="675"
-                    src="https://www.youtube.com/embed/idaaTVNOVr4?si=XbvRTr5MH3TQ58Ee"
+                    width="1920"
+                    height="1080"
+                    src="https://www.youtube.com/embed/pyzL8m2RIfQ?si=k7mmUYiR5GzJ9uel"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </CarouselItem>
+            </Carousel>
+          </div>
+        </div>
+      </section> */}
+
+<section id="demo" className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">See PasteIt in Action</h2>
+          <div className="max-w-5xl mx-auto">
+            <Carousel options={{ loop: true, slidesToScroll: 1 }}>
+            <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img6.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img1.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img2.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img3.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img4.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img5.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+                  <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                      <Image
+                        src="/images/img6.png"
+                        alt="PasteIt Promo"
+                        width={1920}
+                        height={1080}
+                        className="rounded-3xl shadow-lg object-cover w-full h-full"
+                      />
+                    </div>
+              </CarouselItem>
+              <CarouselItem>
+              <div className="p-4 aspect-video w-full h-full flex justify-center items-center">
+                  <iframe
+                    className="rounded-3xl shadow-lg w-full h-full"
+                    src="https://www.youtube.com/embed/pyzL8m2RIfQ?si=k7mmUYiR5GzJ9uel"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
