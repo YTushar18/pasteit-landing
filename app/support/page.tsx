@@ -1,9 +1,14 @@
-import Link from "next/link"
-import { Logo } from "@/components/logo"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { ArrowLeft, LifeBuoy, BookOpen, Mail, HelpCircle } from "lucide-react"
+import Link from "next/link";
+import { Logo } from "@/components/logo";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { ArrowLeft, LifeBuoy, BookOpen, Mail, HelpCircle } from "lucide-react";
 
 export default function Support() {
   return (
@@ -11,7 +16,10 @@ export default function Support() {
       <header className="bg-white border-b sticky top-0 z-10">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <Logo />
-          <Link href="/" className="flex items-center text-orange-600 hover:text-orange-500 transition-colors">
+          <Link
+            href="/"
+            className="flex items-center text-orange-600 hover:text-orange-500 transition-colors"
+          >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
@@ -25,8 +33,9 @@ export default function Support() {
               Support Center
             </h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Need help with PasteIt? We`&apos;`re here to assist you. Check out our frequently asked questions below or reach
-              out to our support team.
+              Need help with PasteIt? We`&apos;`re here to assist you. Check out
+              our frequently asked questions below or reach out to our support
+              team.
             </p>
           </div>
 
@@ -38,9 +47,12 @@ export default function Support() {
                     <Mail className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h2 className="text-xl font-semibold mb-2">Contact Support</h2>
+                    <h2 className="text-xl font-semibold mb-2">
+                      Contact Support
+                    </h2>
                     <p className="text-gray-600 mb-4">
-                      Can`&apos;`t find what you`&apos;`re looking for? Our support team is here to help.
+                      Can`&apos;`t find what you`&apos;`re looking for? Our
+                      support team is here to help.
                     </p>
                     <Button asChild>
                       <a href="mailto:support@getpasteit.com">Email Support</a>
@@ -57,9 +69,12 @@ export default function Support() {
                     <BookOpen className="w-6 h-6 text-orange-600" />
                   </div>
                   <div>
-                    <h2 className="text-xl font-semibold mb-2">Documentation</h2>
+                    <h2 className="text-xl font-semibold mb-2">
+                      Documentation
+                    </h2>
                     <p className="text-gray-600 mb-4">
-                      Explore our detailed documentation for in-depth guides and tutorials.
+                      Explore our detailed documentation for in-depth guides and
+                      tutorials.
                     </p>
                     <Button variant="outline" asChild>
                       <Link href="/docs">View Documentation</Link>
@@ -77,35 +92,50 @@ export default function Support() {
                   <HelpCircle className="w-6 h-6 text-orange-600" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-semibold text-orange-600">Frequently Asked Questions</h2>
-                  <p className="text-gray-600">Find quick answers to common questions about PasteIt.</p>
+                  <h2 className="text-2xl font-semibold text-orange-600">
+                    Frequently Asked Questions
+                  </h2>
+                  <p className="text-gray-600">
+                    Find quick answers to common questions about PasteIt.
+                  </p>
                 </div>
               </div>
 
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1" className="border-orange-100">
-                  <AccordionTrigger className="hover:text-orange-600">How do I install PasteIt?</AccordionTrigger>
+                  <AccordionTrigger className="hover:text-orange-600">
+                    How do I install PasteIt?
+                  </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Installing PasteIt is easy! Simply visit the Chrome Web Store, search for `&quot;`PasteIt`&quot;`, and click the
-                    `&quot;`Add to Chrome`&quot;` button. The extension will automatically install and be ready to use.
+                    Installing PasteIt is easy! Simply visit the Chrome Web
+                    Store, search for `&quot;`PasteIt`&quot;`, and click the
+                    `&quot;`Add to Chrome`&quot;` button. The extension will
+                    automatically install and be ready to use.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2" className="border-orange-100">
-                  <AccordionTrigger className="hover:text-orange-600">Is my data secure with PasteIt?</AccordionTrigger>
+                  <AccordionTrigger className="hover:text-orange-600">
+                    Is my data secure with PasteIt?
+                  </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Yes, your data is completely secure. PasteIt stores all clipboard data locally on your device and
-                    does not transmit any sensitive information to external servers. We prioritize your privacy and
-                    security.
+                    Yes, your data is completely secure. PasteIt stores all
+                    clipboard data locally on your device and does not transmit
+                    any sensitive information to external servers. We prioritize
+                    your privacy and security.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3" className="border-orange-100">
-                  <AccordionTrigger className="hover:text-orange-600">How do I use PasteIt?</AccordionTrigger>
+                  <AccordionTrigger className="hover:text-orange-600">
+                    How do I use PasteIt?
+                  </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    After installation, PasteIt will automatically start capturing your clipboard items. You can access
-                    your clipboard history by clicking on the PasteIt icon in your browser toolbar. From there, you can
-                    manage, organize, and paste your saved items.
+                    After installation, PasteIt will automatically start
+                    capturing your clipboard items. You can access your
+                    clipboard history by clicking on the PasteIt icon in your
+                    browser toolbar. From there, you can manage, organize, and
+                    paste your saved items.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -114,7 +144,7 @@ export default function Support() {
                     Is there a limit to how many items PasteIt can store?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    PasteIt can store unlimited items. 
+                    PasteIt can store unlimited items.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -123,8 +153,10 @@ export default function Support() {
                     Can I sync my clipboard across devices?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600">
-                    Currently, PasteIt operates on a per-device basis. Cross-device synchronization is a feature we`&apos;`re
-                    actively working on and will be available in a future update. Stay tuned for announcements!
+                    Currently, PasteIt operates on a per-device basis.
+                    Cross-device synchronization is a feature we`&apos;`re
+                    actively working on and will be available in a future
+                    update. Stay tuned for announcements!
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -138,14 +170,19 @@ export default function Support() {
                   <LifeBuoy className="w-6 h-6 text-orange-600" />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-semibold mb-4 text-orange-600">Still Need Help?</h2>
+                  <h2 className="text-2xl font-semibold mb-4 text-orange-600">
+                    Still Need Help?
+                  </h2>
                   <p className="text-gray-600 mb-6">
-                    Our support team is available Monday through Friday, 9:00 AM - 5:00 PM EST. We typically respond to
-                    all inquiries within 24 hours.
+                    Our support team is available Monday through Friday, 9:00 AM
+                    - 5:00 PM EST. We typically respond to all inquiries within
+                    24 hours.
                   </p>
                   <div className="flex gap-4">
                     <Button asChild>
-                      <a href="mailto:support@getpasteit.com">Contact Support</a>
+                      <a href="mailto:support@getpasteit.com">
+                        Contact Support
+                      </a>
                     </Button>
                     <Button variant="outline" asChild>
                       <Link href="/docs">Browse Documentation</Link>
@@ -158,6 +195,5 @@ export default function Support() {
         </div>
       </main>
     </div>
-  )
+  );
 }
-
